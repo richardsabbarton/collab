@@ -1,10 +1,10 @@
 project:
-  name: vcr-hello-world
+  name: collab
 instance:
   name: dev
   runtime: nodejs16
   region: aws.euw1
-  application-id: YOUR-VONAGE-API-APPLICATION-ID
+  application-id: 8f7c4a34-26f3-4535-96e1-5037336f8a1c
   entrypoint: [node, server.js]
   environment:
     - name: YOURVAR1
@@ -13,4 +13,4 @@ instance:
       value: "string value"
 debug:
   name: debug
-  entrypoint: [sh, debug.sh]
+  entrypoint: [node, server.js]
